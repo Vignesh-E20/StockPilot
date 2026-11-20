@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>StockPilot · Inventory Management</title>
+<meta name="description" content="StockPilot helps you track products, suppliers and stock movements, and warns you before anything runs out.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('sp_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+<link rel="stylesheet" href="css/style.css"></head>
+<body class="landing">
+
+<header class="nav"><div class="wrap">
+ <a class="wordmark" href="#top" aria-label="StockPilot home"><span class="lg" data-logo="color"></span><span>Stock<b>Pilot</b></span></a>
+ <nav class="nav-links" aria-label="Sections"><a href="#about">About Us</a><a href="#features">Features</a><a href="#how">How It Works</a></nav>
+ <button class="btn ghost icon-btn" id="theme-toggle" aria-label="Toggle dark mode"></button>
+ <a class="btn sm" href="#login">Sign in</a>
+</div></header>
+
+<section class="hero" id="top"><div class="wrap">
+ <div>
+  <h1>Know what's in stock before it runs out.</h1>
+  <p class="lead">StockPilot keeps your products, suppliers and stock movements in one place, and warns you the moment an item runs low.</p>
+  <div class="cta-row"><a class="btn lg" href="#login">Sign in to your dashboard</a><a class="btn ghost lg" href="#how">See how it works</a></div>
+  <div class="panel peek" aria-label="Sample stock levels">
+   <div class="peek-row"><span>Wireless Mouse</span><div class="meter"><i style="width:80%"></i></div><span class="tag">40 in stock</span></div>
+   <div class="peek-row"><span>USB-C Hub</span><div class="meter low"><i style="width:18%"></i></div><span class="tag low">6 left · reorder</span></div>
+   <div class="peek-row"><span>Notebook A5</span><div class="meter"><i style="width:96%"></i></div><span class="tag">120 in stock</span></div>
+  </div>
+ </div>
+
+ <form class="panel login" id="login">
+  <div class="badge" data-logo="color"></div>
+  <h3>Welcome back</h3>
+  <p class="sub">Sign in to manage your inventory.</p>
+  <label>Username<div class="field"><span class="icon" data-ic="user"></span><input name="u" placeholder="Enter username" required autocomplete="username"></div></label>
+  <label>Password<div class="field"><span class="icon" data-ic="lock"></span><input name="p" id="pw" type="password" placeholder="Enter password" required autocomplete="current-password"><button type="button" class="eye" id="eye" aria-label="Show password"></button></div></label>
+  <button class="btn">Log in</button>
+  <p class="note">Authorized access only.</p>
+ </form>
+</div></section>
+
+<section class="sec band" id="about"><div class="wrap about">
+ <div>
+  <h2>About Us</h2>
+  <p>StockPilot is a simple inventory manager for small shops, stores and workshops. It replaces notebooks and scattered spreadsheets with one clear place for everything you stock.</p>
+  <p>We built it around one question: "How many do I have right now?" Every purchase and sale updates your stock automatically, so the answer is always current.</p>
+  <p>Everything runs in your browser and your data stays on your device. Prices and totals are shown in Indian Rupees (₹).</p>
+ </div>
+ <ul class="who">
+  <li><span class="icon" data-ic="products"></span><div><strong>Shops and stores</strong><span>Know what to reorder before shelves go empty.</span></div></li>
+  <li><span class="icon" data-ic="suppliers"></span><div><strong>Warehouses and workshops</strong><span>Track who supplies what, and what came in or went out.</span></div></li>
+  <li><span class="icon" data-ic="reports"></span><div><strong>Owners and managers</strong><span>See stock value and movement in one report.</span></div></li>
+ </ul>
+</div></section>
+
+<section class="sec" id="features"><div class="wrap">
+ <div class="sec-head"><h2>Features</h2><p>Everything you need to keep stock under control, and nothing you have to set up.</p></div>
+ <div class="feat">
+  <article><span class="icon" data-ic="dashboard"></span><h3>Live dashboard</h3><p>Totals, low-stock items and recent movements on one screen.</p></article>
+  <article><span class="icon" data-ic="products"></span><h3>Product management</h3><p>Add, edit and search products with automatic IDs and category filters.</p></article>
+  <article><span class="icon" data-ic="transactions"></span><h3>Stock In / Out</h3><p>Record every movement. Quantities update by themselves and can never go negative.</p></article>
+  <article><span class="icon" data-ic="bell"></span><h3>Low-stock alerts</h3><p>Set a minimum for each product and get warned as soon as stock drops below it.</p></article>
+  <article><span class="icon" data-ic="categories"></span><h3>Categories and suppliers</h3><p>Group products and keep supplier contacts next to the items they provide.</p></article>
+  <article><span class="icon" data-ic="download"></span><h3>Reports and CSV export</h3><p>See stock value in ₹, filter by date and download a CSV for Excel.</p></article>
+ </div>
+</div></section>
+
+<section class="sec band" id="how"><div class="wrap">
+ <div class="sec-head"><h2>How It Works</h2><p>Four steps from an empty list to a stock you can trust.</p></div>
+ <ol class="steps">
+  <li><h3>Add your products</h3><p>Enter each item with its category, supplier, price and minimum stock level.</p></li>
+  <li><h3>Record stock in and out</h3><p>Log purchases and sales. StockPilot updates the quantity right away.</p></li>
+  <li><h3>Watch the alerts</h3><p>Items that fall below their minimum appear on your dashboard so you can reorder.</p></li>
+  <li><h3>Review reports</h3><p>Check stock value, filter by date and export a CSV when you need one.</p></li>
+ </ol>
+</div></section>
+
+<section class="sec cta-band"><div class="wrap">
+ <h2>Ready to see your stock?</h2><p>Sign in and your dashboard is one click away.</p>
+ <a class="btn lg" href="#login">Sign in</a>
+</div></section>
+
+<footer class="foot"><div class="wrap">
+ <a class="wordmark" href="#top"><span class="lg" data-logo="color"></span><span>Stock<b>Pilot</b></span></a>
+ <nav aria-label="Footer"><a href="#about">About Us</a><a href="#features">Features</a><a href="#how">How It Works</a></nav>
+ <small>© <span id="yr"></span> StockPilot. Your data stays in your browser.</small>
+</div></footer>
+
+<script src="js/app.js"></script><script>
+document.querySelectorAll('[data-logo]').forEach(e=>e.innerHTML=logoSvg(e.dataset.logo));
+document.querySelectorAll('[data-ic]').forEach(e=>e.innerHTML=ICON[e.dataset.ic]);
+$('#yr').textContent=new Date().getFullYear();
+wireThemeToggle($('#theme-toggle'));
+const eye=$('#eye'),pw=$('#pw'),paintEye=()=>{eye.innerHTML=ic(pw.type==='password'?'eye':'eyeoff');eye.setAttribute('aria-label',pw.type==='password'?'Show password':'Hide password')};
+paintEye();eye.onclick=()=>{pw.type=pw.type==='password'?'text':'password';paintEye()};
+if(sessionStorage.getItem('sp_auth')==='1')location.href='dashboard.html';
+$('#login').onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target));
+if(d.u==='admin'&&d.p==='admin123'){sessionStorage.setItem('sp_auth','1');location.href='dashboard.html'}else toast('Wrong username or password','err')};
+</script></body></html>
